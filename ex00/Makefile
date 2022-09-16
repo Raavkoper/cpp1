@@ -1,7 +1,7 @@
 NAME = brainz
 
 COMP = c++
-C_FLAGS =
+C_FLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRC = main.cpp newZombie.cpp randomChump.cpp Zombie.cpp
 OBJS = $(SRC:%.c=%.o)
