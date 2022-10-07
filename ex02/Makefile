@@ -1,4 +1,4 @@
-NAME = brainz
+NAME = brain
 
 COMP = c++
 C_FLAGS = 
