@@ -1,4 +1,4 @@
-NAME = brainz
+NAME = zombies
 
 COMP = c++
 C_FLAGS = -Wall -Wextra -Werror -std=c++98
