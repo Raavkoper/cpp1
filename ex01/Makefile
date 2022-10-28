@@ -1,10 +1,10 @@
-NAME = brainz
+NAME = zombies
 
 COMP = c++
 C_FLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRC = main.cpp Zombie.cpp zombieHorde.cpp
-OBJS = $(SRC:%.c=%.o)
+OBJS = $(SRC:%.cpp=%.o)
 
 all: $(NAME)
 
@@ -12,7 +12,7 @@ $(NAME): $(OBJS)
 	@$(COMP) $(C_FLAGS) $^ -o $(NAME)
 	@echo "compiled:)"
 
-%.o: %.c
+%.o: %.cpp
 	@$(COMP) -c $(CFLAGS) -o $@ $<
 
 clean:

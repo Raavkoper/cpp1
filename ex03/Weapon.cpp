@@ -1,13 +1,13 @@
 #include "Weapon.hpp"
 
-Weapon::Weapon() {
-    type = "poop";
+Weapon::Weapon(std::string new_type) {
+	type = new_type;
 }
 
 const std::string Weapon::getType() {
-    return ((const std::string)type);
+	return (type);
 }
 
-void Weapon::setType(std::string new_type) {
-    type = new_type;
+void	Weapon::setType(std::string new_type) {
+	type = new_type;
 }

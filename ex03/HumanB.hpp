@@ -1,11 +1,10 @@
 #include "Weapon.hpp"
 
-class HumanB {
+class HumanA {
 private:
-    std::string name;
-    Weapon weapon;
-    
+	Weapon weapon;
+	std::string name;
+
 public:
-    HumanB(std::string name);
-    void attack();
+	void	attack();
 };
