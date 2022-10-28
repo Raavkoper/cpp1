@@ -1,8 +1,8 @@
-#include "Weapon.hpp"
+#include "HumanB.hpp"
 #include "HumanA.hpp"
 
 int main(void) {
-	Weapon club("spiked club");
+	// Weapon club("spiked club");
 
-	HumanA bob("Bob", club);
+	// HumanA bob("Bob", club);
 }
