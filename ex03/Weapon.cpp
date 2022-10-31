@@ -1,5 +1,9 @@
 #include "Weapon.hpp"
 
+Weapon::Weapon() {
+	type = "unset";
+}
+
 Weapon::Weapon(std::string new_type) {
 	type = new_type;
 }
