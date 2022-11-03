@@ -2,6 +2,7 @@
 #define REPLACE_H
 
 #include <iostream>
+#include <string>
 #include <fstream>
 
 class Replace {

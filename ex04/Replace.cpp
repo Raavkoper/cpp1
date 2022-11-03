@@ -16,13 +16,13 @@ Replace::Replace(std::string file, std::string s1, std::string s2) {
 }
 
 std::string	Replace::change_occurrence(std::string line) {
-	int len = line.length();
-	int sub_len = this->s1.length();
-	for (int i = 0; i < len; i++) {
-		if (line.append(line, i, sub_len) == s1)
-			std::cout << "hoi" << std::endl;
+	size_t	pos = line.find(s1);
+	while (pos != std::string::npos) {
+		line.erase(pos, s1.length());
+		line.insert(pos, s2);
+		pos = line.find(s1);
 	}
-	return ("");
+	return (line);
 }
 
 void	Replace::read_file() {
@@ -32,4 +32,5 @@ void	Replace::read_file() {
 		output_file << this->change_occurrence(line) + "\n";
 	}
 	input_file.close();
+	output_file.close();
 }
