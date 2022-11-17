@@ -1,7 +1,7 @@
 NAME = brain
 
 COMP = c++
-C_FLAGS = 
+C_FLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRC = main.cpp
 OBJS = $(SRC:%.cpp=%.o)
